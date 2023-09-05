@@ -1,0 +1,6 @@
+---
+import '../styles/footer.css'
+const { platform, username } = Astro.props;
+---
+
+<a class="tocar" href={`https://www.${platform}.com/${username}`}>{platform}</a>

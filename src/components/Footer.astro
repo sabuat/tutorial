@@ -1,0 +1,78 @@
+---
+import '../styles/footer.css'
+import ImagenFooter from './ImagenFooter.astro';
+import TituloFooter from './TituloFooter.astro';
+import LineaFooter from './LineaFooter.astro';
+
+const imagen = {
+  caminho: "src/images/Logo fundo azul.png",
+  alter: "logo araguaney fondo azul",
+  }
+
+const List1 = "Cursos Online"
+const List2 = "Sobre"
+---
+
+<div class="container-fluid bg-footer">
+  <footer class="pt-5">
+    <div class="row">
+      <div class="col-3">
+      </div>
+      <div class="col-6">
+        <TituloFooter Titulo={List1}/>
+      </div>
+      <div class="col-3">
+        <TituloFooter Titulo={List2}/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-2 ">
+        <ImagenFooter
+          caminho={imagen.caminho}
+          alter={imagen.alter}
+        />
+      </div>
+      <div class="col-2">
+        
+        <LineaFooter linea = "Introdução à programação" />
+        <LineaFooter linea = "Git e GitHub" />
+        <LineaFooter linea = "Algoritmos" />
+        <LineaFooter linea = "Entornos de desenvolvimento (IDE)" />
+        <LineaFooter linea = "HTML5" />
+        <LineaFooter linea = "CCS3" />
+        <LineaFooter linea = "JS Básico" />
+        <LineaFooter linea = "JS Avanzado" />
+      </div>
+      <div class="col-2">
+        <LineaFooter linea = "Java Básico" />
+        <LineaFooter linea = "Jáva Avanzado" />
+        <LineaFooter linea = "JS serverless" />
+        <LineaFooter linea = "React" />
+        <LineaFooter linea = "Angular" />
+        <LineaFooter linea = "Astro" />
+        <LineaFooter linea = "ExpressJS" />
+        <LineaFooter linea = "Python Básico" />
+        <LineaFooter linea = "Python Avanzado" />
+      </div>
+      <div class="col-2">
+        <LineaFooter linea = "Flask" />
+        <LineaFooter linea = "Django" />
+        <LineaFooter linea = "SQL Básico" />
+        <LineaFooter linea = "SQL Intermediario" />
+        <LineaFooter linea = "SQL Avanzado" />
+        <LineaFooter linea = "Estatística para DataScience" />
+        <LineaFooter linea = "Visualização de Dados" />
+        <LineaFooter linea = "Introdução ao Machine Learning" />
+      </div><div class="col-2">
+        <LineaFooter linea = "Escola" />
+        <LineaFooter linea = "Cursos" />
+        <LineaFooter linea = "Eventos" />
+        <LineaFooter linea = "Blog" />
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </footer>
+</div>
