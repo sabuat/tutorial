@@ -4,10 +4,15 @@
   text-transform: uppercase;
   font-size: calc(1.25rem + 0.3vw);
 }
+
+.text-titulo{
+  font-family: var(--fonte-titulo);
+  color: var(--preto-titulo);
+  font-size: 3rem;
+}
   
 .bg-menu {
   background-color: var(--azul-medio);
-  height: 5vw;
 }
 
 .menu {
@@ -24,26 +29,8 @@
   width: auto;
 }
 
-@media only screen and (max-width: 992px) {
-  .img-banner {
+@media (max-width: 768px) {
+  .img-banner{
     display: none;
   }
-
-  .nav-link {
-    display: none;
   }
-
-  .bg-menu {
-    height: 2rem;
-  }
-
-  .navbar {
-    color: var(--preto-titulo);
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .navbar {
-    display: none;
-  }   
-}

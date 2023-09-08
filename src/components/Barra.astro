@@ -1,0 +1,72 @@
+---
+import Link from "./Link.astro";
+import ImagenBanner from "./ImagenBanner.astro";
+import "../styles/header.css";
+
+const link_1 = {
+  name: "Inicio",
+  caminho: "/",
+};
+const link_2 = {
+  name: "Sobre",
+  caminho: "/about",
+};
+const link_3 = {
+  name: "Cursos",
+  caminho: "/cursos",
+};
+const link_4 = {
+  name: "Contato",
+  caminho: "/contact",
+};
+const link_5 = {
+  name: "Blog",
+  caminho: "/blog",
+};
+
+const imagen = {
+  caminho: "src/images/imagem-banner.png",
+  alter: "logo araguaney",
+};
+
+const imagen2 = {
+  caminho: "src/images/nome-banner.png",
+  alter: "logo araguaney",
+};
+---
+
+<nav class="navbar navbar-expand-sm bg-menu navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <ImagenBanner caminho={imagen.caminho} alter={imagen.alter} />
+      <ImagenBanner caminho={imagen2.caminho} alter={imagen2.alter} />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <Link vinc={link_1.name} ref={link_1.caminho} />
+        </li>
+        <li class="nav-item">
+          <Link vinc={link_2.name} ref={link_2.caminho} />
+        </li>
+        <li class="nav-item">
+          <Link vinc={link_3.name} ref={link_3.caminho} />
+        </li>
+        <li class="nav-item">
+          <Link vinc={link_4.name} ref={link_4.caminho} />
+        </li>
+        <li class="nav-item">
+          <Link vinc={link_5.name} ref={link_5.caminho} />
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

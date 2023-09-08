@@ -1,7 +1,6 @@
 ---
-import Navegador from './Navegador.astro';
+import Barra from './Barra.astro';
 import Footer from '../components/Footer.astro';
-import PageTitle from '../components/PageTitle.astro';
 import '../styles/index.css';
 const { pageTitle } = Astro.props;
 ---
@@ -9,8 +8,8 @@ const { pageTitle } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/Araguaney Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <link
@@ -25,8 +24,7 @@ const { pageTitle } = Astro.props;
     crossorigin="anonymous"></script>
   </head>
   <body>
-    <Navegador/>
-    <PageTitle title={pageTitle}/>
+    <Barra/>
       <slot/>
     <Footer/>
   </body>

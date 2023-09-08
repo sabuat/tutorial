@@ -12,6 +12,8 @@
   --fonte-menu: 'Barlow Condensed';
   --fonte-titulo: 'Mulish';
   --fonte-geral:'Nunito Sans';
+  --max-height-img: calc(60 / 16rem);
+  --max-width-img: auto;
 }
 
 .fonte-paragrafo {
