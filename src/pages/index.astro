@@ -1,17 +1,34 @@
 ---
 import Page from "../components/Page.astro";
+import ImagenCorpo from "../components/ImagenCorpo.astro";
+import '../styles/index.css'
 const Titulo = "Inicio";
+
+const imagen = {
+  caminho: "src/images/Bases Site/learning online 7.jpg",
+  alter: "Pessoas estudando TI",
+}
+
 ---
 
 <Page pageTitle={Titulo}>
     <div class="row">
-        <div class="col">
-            <h1>
-                Educa
+        <div class="col-6">
+            <p class="fonte-titulo fs-1">
+                Educação tecnologica,
+            </p>
+            <h1 class="fonte-titulo fs-1">
+                para <span style="color: var(--azul-medio)">TODOS</span>
             </h1>
+            <p class="fonte-paragrafo fs-5">
+                Araguaney Escola Digital é uma iniciativa de caráter educativo e social que busca proporcionar conhecimento e habilidades em desenvolvimento Front End e Back End para indivíduos que enfrentam dificuldades de acesso à educação e informações na área de tecnologia. 
+            </p>
         </div>
-        <div class="col">
-
+        <div class="col-6">
+            <ImagenCorpo 
+                caminho={imagen.caminho}
+                alter={imagen.alter}
+            />
         </div>
     </div>
 </Page>

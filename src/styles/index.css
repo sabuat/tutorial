@@ -12,8 +12,6 @@
   --fonte-menu: 'Barlow Condensed';
   --fonte-titulo: 'Mulish';
   --fonte-geral:'Nunito Sans';
-  --max-height-img: calc(60 / 16rem);
-  --max-width-img: auto;
 }
 
 .fonte-paragrafo {
@@ -34,4 +32,15 @@
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--cinza-claro)
+}
+
+.fonte-titulo {
+  font-family: var(--fonte-titulo);
+}
+
+.img-geral {
+  width: 607px;
+  height: 431px;
+  flex-shrink: 0;
+  border-radius: 142px;
 }

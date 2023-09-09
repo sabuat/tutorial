@@ -3,7 +3,22 @@
   }
 
 .img-footer{
-height: 395px;
-width: 222px;
+  height: 395px;
+  width: 222px;
 }
-  
+
+@media (max-width: 992px) {
+  .titulo-dsp {
+    display: none;
+  }
+
+  div > footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .titulo-dsp-2 {
+    display: none;
+  }
+  }
