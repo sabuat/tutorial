@@ -1,0 +1,29 @@
+.btn-style {
+    font-weight: 600;
+    font-family: var(--fonte-menu);
+    color: var(--azul-medio);
+    background-color: #fff;
+    border-color: var(--azul-medio);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .btn-style:hover {
+    background-color:  var(--azul-medio);
+    color: #fff;
+  }
+
+  .btn-style-2 {
+    font-weight: 600;
+    font-family: var(--fonte-menu);
+    color: #fff;
+    background-color: var(--azul-medio);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .btn-style-2:hover {
+    background-color:  var(#fff);
+    color: var(--azul-medio);
+    border-color: var(--azul-medio);
+  }
