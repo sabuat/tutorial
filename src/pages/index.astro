@@ -1,7 +1,10 @@
 ---
 import Page from "../components/Page.astro";
 import ImagenCorpo from "../components/ImagenCorpo.astro";
+import Boton from "../components/Boton.astro";
+
 import '../styles/index.css'
+import '../styles/paginas.css'
 const Titulo = "Inicio";
 
 const imagen = {
@@ -12,23 +15,34 @@ const imagen = {
 ---
 
 <Page pageTitle={Titulo}>
-    <div class="row">
+    <div class="row" style="padding: 5rem 7.5rem">
         <div class="col-6">
-            <p class="fonte-titulo fs-1">
+            <p class="col-10 fonte-titulo fs-1">
                 Educação tecnologica,
             </p>
-            <h1 class="fonte-titulo fs-1">
+            <h1 class="col-10 fonte-titulo fs-1">
                 para <span style="color: var(--azul-medio)">TODOS</span>
             </h1>
-            <p class="fonte-paragrafo fs-5">
+            <p class="col-8 fonte-paragrafo fs-5">
                 Araguaney Escola Digital é uma iniciativa de caráter educativo e social que busca proporcionar conhecimento e habilidades em desenvolvimento Front End e Back End para indivíduos que enfrentam dificuldades de acesso à educação e informações na área de tecnologia. 
             </p>
+            <Boton nombre="SAIBA MAIS"/>
         </div>
         <div class="col-6">
             <ImagenCorpo 
                 caminho={imagen.caminho}
                 alter={imagen.alter}
             />
+        </div>
+    </div>
+    <div class="row" style="padding: 0 7.5rem">
+        <div class="col-12">
+            <h1 class="fonte-titulo fs-1 text-center" style="color: var(--azul-medio)">
+                Nossas Trilhas
+            </h1>
+        </div>
+        <div class="col-6">
+
         </div>
     </div>
 </Page>

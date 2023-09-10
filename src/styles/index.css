@@ -44,3 +44,18 @@
   flex-shrink: 0;
   border-radius: 142px;
 }
+
+.btn-style {
+  font-weight: 600;
+  font-family: var(--fonte-menu);
+  color: var(--azul-medio);
+  background-color: #fff;
+  border-color: var(--azul-medio);
+  margin: 2rem;
+  margin-left: 4rem;
+}
+
+.btn-style:hover {
+  background-color:  var(--azul-medio);
+  color: #fff;
+}
