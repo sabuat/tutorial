@@ -1,0 +1,10 @@
+.img-geral {
+    flex-shrink: 0;
+    border-radius: 8.875vw;
+  }
+
+@media (max-width: 768px) {
+    .img-geral {
+    margin: 3vw 0;
+    }
+}

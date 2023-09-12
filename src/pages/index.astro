@@ -4,75 +4,80 @@ import ImagenCorpo from "../components/ImagenCorpo.astro";
 import Boton from "../components/Boton.astro";
 import Boton2 from "../components/Boton2.astro";
 import Carrusel from "../components/Carrusel.astro";
-import '../styles/index.css'
-import '../styles/paginas.css'
+import "../styles/index.css";
+import "../styles/paginas.css";
 const Titulo = "Inicio";
 
 const imagen = {
   caminho: "/site/learning online 7.jpg",
   alter: "Pessoas estudando TI",
-}
+};
 
 const imagen2 = {
   caminho: "/site/learning online 8.jpg",
   alter: "Pessoas ensinando TI",
-}
+};
 ---
 
 <Page pageTitle={Titulo}>
-    <div class="row" style="padding: 5rem 7.5rem">
-        <div class="col-6">
-            <p class="col-10 fonte-titulo fs-1">
-                Educação tecnologica,
-            </p>
-            <h1 class="col-10 fonte-titulo fs-1">
-                para <span style="color: var(--azul-medio)">TODOS</span>
-            </h1>
-            <p class="col-8 fonte-paragrafo fs-5">
-                Araguaney Escola Digital é uma iniciativa de caráter educativo e social que busca proporcionar conhecimento e habilidades em desenvolvimento Front End e Back End para indivíduos que enfrentam dificuldades de acesso à educação e informações na área de tecnologia. 
-            </p>
-            <div class="col-8 text-center">
-                <Boton nombre="SAIBA MAIS"/>
+    <div class="row box">
+        <div class="col-12 col-lg-6 order-1 order-lg-0 pt-3">
+        <div class="col-12 col-md-8">
+            <div class="fonte-titulo fs-1">Educação tecnologica,</div>
+            <div class="fonte-titulo fs-1">
+            para <span style="color: var(--azul-medio)">TODOS</span>
             </div>
         </div>
-        <div class="col-6">
-            <ImagenCorpo 
-                caminho={imagen.caminho}
-                alter={imagen.alter}
-            />
+        <div class="col-12 col-md-8 fonte-paragrafo fs-5">
+            Araguaney Escola Digital é uma iniciativa de caráter educativo e social
+            que busca proporcionar conhecimento e habilidades em desenvolvimento
+            Front End e Back End para indivíduos que enfrentam dificuldades de
+            acesso à educação e informações na área de tecnologia.
+        </div>
+        <div class="col-12 col-md-8 text-center">
+            <Boton nombre="SAIBA MAIS" />
+        </div>
+        </div>
+        <div class="col-12 col-lg-6 order-0 order-lg-1">
+        <ImagenCorpo caminho={imagen.caminho} alter={imagen.alter} />
         </div>
     </div>
-    <div class="row" style="padding: 0 7.5rem">
+    <div class="row box" style="background-color: #eeeeee">
         <div class="col-12">
-            <h1 class="fonte-titulo fs-1 text-center" style="color: var(--azul-medio)">
-                Nossas Trilhas
-            </h1>
+            <div
+            class="fonte-titulo fs-1 text-center"
+            style="color: var(--azul-medio)"
+            >
+            Nossas Trilhas
+            </div>
         </div>
-        <div class="col-12 ps-5 pe-5 pt-5">
-            <Carrusel/>
+        <div class="col-12 ps-lg-5 pe-lg-5 pt-lg-5">
+            <Carrusel />
         </div>
         <div class="col-12 text-center">
-            <Boton2 style="padding: 2rem" nombre="TODOS NOSSOS CURSOS"/>
+            <Boton2 style="padding: 2rem" nombre="TODOS NOSSOS CURSOS" />
         </div>
     </div>
-    <div class="row" style="padding: 5rem 7.5rem">
-        <div class="col-6">
-            <ImagenCorpo 
-                caminho={imagen2.caminho}
-                alter={imagen2.alter}
-            />
-        </div>
-        <div class="col-6">
-            <h1 class="col-10 fonte-titulo fs-1">
-                Faça parte do <span style="color: var(--azul-medio)">PROJETO</span>
-            </h1>
-            <p class="col-8 fonte-paragrafo fs-5">
-                Convidamos você a fazer parte do nosso projeto. Nosso compromisso é com a inclusão e a transformação positiva da vida de pessoas que enfrentam dificuldades de acesso à educação e informações na área de tecnologia. Como uma organização sem fins lucrativos, acreditamos no poder da educação para capacitar e empoderar. 
-            </p>
-            <div class="col-8 text-center">
-               <Boton nombre="FORMULARIO"/>  
-            </div>
-        </div>
-        
+  <div class="row box">
+    <div class="col-12 col-lg-6">
+      <ImagenCorpo caminho={imagen2.caminho} alter={imagen2.alter} />
     </div>
+    <div class="col-12 col-lg-6">
+      <div class="col-12 col-md-8">
+        <div class="fonte-titulo fs-1">
+          Faça parte do <span style="color: var(--azul-medio)">PROJETO</span>
+        </div>
+        <div class="col-12 col-md-8 fonte-paragrafo fs-5">
+          Convidamos você a fazer parte do nosso projeto. Nosso compromisso é
+          com a inclusão e a transformação positiva da vida de pessoas que
+          enfrentam dificuldades de acesso à educação e informações na área de
+          tecnologia. Como uma organização sem fins lucrativos, acreditamos no
+          poder da educação para capacitar e empoderar.
+        </div>
+      </div>
+      <div class="col-12 col-md-8 text-center">
+        <Boton nombre="FORMULARIO" />
+      </div>
+    </div>
+  </div>
 </Page>
