@@ -3,30 +3,43 @@ import '../styles/footer.css'
 import ImagenFooter from './ImagenFooter.astro';
 import TituloFooter from './TituloFooter.astro';
 import LineaFooter from './LineaFooter.astro';
+import ImagemSlides from './ImagemSlides.astro';
 
 const imagen = {
   caminho: "/banner/Logo fundo azul.png",
   alter: "logo araguaney fondo azul",
-  }
+}
+
+const imagen2 = {
+  caminho: "/banner/nome-banner.png",
+  alter: "araguaney 1",
+};
 
 const List1 = "Cursos Online"
 const List2 = "Sobre"
 ---
 
-<div class="container-fluid bg-footer d-flex justify-content-around">
+<div class="container-fluid bg-footer d-flex justify-content-evenly">
   <footer class="pt-5">
+    <div class="row">
+      <div class="col-12 p-4 img-dsp">
+        <ImagemSlides
+          caminho={imagen2.caminho}
+          alter={imagen2.alter}
+        />
+    </div>
     <div class="row titulo-dsp">
-      <div class="col-3">
+      <div class="col-4">
       </div>
       <div class="col-6">
         <TituloFooter Titulo={List1}/>
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <TituloFooter Titulo={List2}/>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 ps-3">
+      <div class="col-lg-4 ps-3 titulo-dsp-2 text-center">
         <ImagenFooter
           caminho={imagen.caminho}
           alter={imagen.alter}
@@ -63,13 +76,11 @@ const List2 = "Sobre"
         <LineaFooter linea = "Visualização de Dados" />
         <LineaFooter linea = "Introdução ao Machine Learning" />
       </div>
-      <div class="col-lg-2">
+      <div class="col-12 col-lg-2">
         <LineaFooter linea = "Escola" />
         <LineaFooter linea = "Cursos" />
         <LineaFooter linea = "Eventos" />
         <LineaFooter linea = "Blog" />
-      </div>
-      <div class="col-lg">
       </div>
     </div>
   </footer>
