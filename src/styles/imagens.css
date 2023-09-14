@@ -7,3 +7,15 @@
     margin: 3vw 0;
     }
 }
+
+.img-add {
+  display: none;
+
+}
+
+
+@media (max-width: 576px) {
+  .img-add {
+    display:block;
+  }
+}
