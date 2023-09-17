@@ -44,6 +44,7 @@
 
 .box {
   padding: 4.5rem 6.75rem;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
