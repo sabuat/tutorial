@@ -43,10 +43,10 @@ const imagen2 = {
     </div>
     <ImagenCorpo caminho={imagen.caminho} alter={imagen.alter} />
     <div class="col-12 text-center btn-add-1">
-      <Boton nombre="SAIBA MAIS" />
+      <Boton nombre="SAIBA MAIS" camino="/about"/>
     </div>
   </div>
-  <div class="row box" style="background-color: #eeeeee">
+  <div class="row box" style="background-color: var(--branco-geral)">
   <div class="col-12">
       <div
       class="fonte-titulo fs-1 text-center"
@@ -59,7 +59,7 @@ const imagen2 = {
         <Carrusel />
     </div>
     <div class="col-12 text-center">
-        <Boton2 style="padding: 2rem" nombre="TODOS NOSSOS CURSOS" />
+        <Boton2 style="padding: 2rem" nombre="TODOS NOSSOS CURSOS" camino="/cursos"/>
     </div>
   </div>
   <div class="row box align-items-center">
@@ -78,7 +78,7 @@ const imagen2 = {
         </ParagrafoCorpo>
       </div>
       <div class="col-12 text-center">
-        <Boton nombre="FORMULARIO" />
+        <Boton nombre="FORMULARIO" camino="/contact"/>
       </div>
     </div>
   </div>

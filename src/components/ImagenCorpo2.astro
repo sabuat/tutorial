@@ -1,0 +1,11 @@
+---
+import '../styles/imagens.css';
+const { caminho, alter } = Astro.props;
+---
+
+<div class="col-12 col-lg-5">
+    <img class="img-fluid img-geral-pages"
+        src={caminho}
+        alt={alter}
+    />
+</div>

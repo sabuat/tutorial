@@ -2,6 +2,10 @@
     border-radius: 8.875vw;
   }
 
+  .img-geral-pages {
+    border-radius: 4.75vw;
+  }
+
 @media (max-width: 768px) {
     .img-geral {
     margin: 3vw 0;

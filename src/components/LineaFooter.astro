@@ -1,8 +1,10 @@
 ---
 import '../styles/footer.css'
-const { linea } = Astro.props
+const { linea, caminho } = Astro.props
 ---
 
-<p class="fonte-listas ">
-    {linea}
-</p>
+<a class="menu" href={caminho}>
+    <p class="fonte-listas menu">
+        {linea}
+    </p>
+</a>

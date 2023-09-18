@@ -12,6 +12,7 @@
   --fonte-menu: 'Barlow Condensed';
   --fonte-titulo: 'Mulish';
   --fonte-geral:'Nunito Sans';
+  --branco-geral: #efefef;
 }
 
 .fonte-paragrafo {
@@ -22,11 +23,19 @@
   margin-block-end: 0.25em;
 }
 
+.fonte-paragrafo-branco {
+  font: var(--fonte-geral);
+  font-weight: 400;
+  color: var(--branco-geral);
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+}
+
 .fonte-listas {
   font: var(--fonte-geral);
   font-weight: 300;
   font-size: calc(18 / 16rem);
-  color: var(--cinza-claro)
+  color: var(--branco-geral)
 }
 
 .fonte-top-listas {
@@ -34,6 +43,13 @@
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--cinza-claro)
+}
+
+.fonte-top-paragrafo {
+  font: var(--fonte-geral);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--preto-titulo)
 }
 
 .fonte-titulo {

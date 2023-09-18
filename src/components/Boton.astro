@@ -1,6 +1,6 @@
 ---
 import '../styles/botons.css'
-const { nombre } = Astro.props;
+const { nombre, camino } = Astro.props;
 ---
 
-<button type="button" class="btn btn-style">{nombre}</button>
+<a class="btn btn-style" href={camino} role="button">{nombre}</a>

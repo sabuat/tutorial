@@ -1,9 +1,11 @@
 ---
 import '../styles/footer.css'
+import '../styles/header.css'
 import ImagenFooter from './ImagenFooter.astro';
 import TituloFooter from './TituloFooter.astro';
 import LineaFooter from './LineaFooter.astro';
-import ImagemSlides from './ImagemSlides.astro';
+import ImagemDisplay from './ImagemDisplay.astro';
+import Icons from './Icons.astro';
 
 const imagen = {
   caminho: "/banner/Logo fundo azul.png",
@@ -13,21 +15,49 @@ const imagen = {
 const imagen2 = {
   caminho: "/banner/nome-footer.png",
   alter: "araguaney nome",
-};
+};``
+
+const icon = {
+  caminho: "/icons/rrss (1).png",
+  alter: "GitHub",
+  rrss: "https://github.com/sabuat",
+}
+
+const icon1 = {
+  caminho: "/icons/rrss (2).png",
+  alter: "Discord",
+  rrss: "https://discord.com/channels/1153169650104934430/1153169655536549951",
+}
+
+const icon2 = {
+  caminho: "/icons/rrss (3).png",
+  alter: "LinkedIn",
+  rrss: "https://www.linkedin.com/company/araguaney-ead"
+}
+
+const icon3 = {
+  caminho: "/icons/rrss (4).png",
+  alter: "Instagram",
+  rrss: ""
+
+}
 
 const List1 = "Cursos Online"
 const List2 = "Sobre"
 ---
 
-<div class="container-fluid bg-footer d-flex justify-content-evenly">
+<div class="container-fluid bg-footer d-flex display-text">
   <footer class="pt-1">
     <div class="row">
-      <div class="col-12 p-4 img-dsp">
-        <ImagemSlides
+      <img class="titulo-dsp-2" src="/banner/linea.png" alt="">
+    </div>
+    <div class="row ">
+      <a class="col-12 p-5 img-dsp text-center" href="/">
+        <ImagemDisplay
           caminho={imagen2.caminho}
           alter={imagen2.alter}
         />
-    </div>
+      </a>
     <div class="row titulo-dsp">
       <div class="col-4">
       </div>
@@ -39,12 +69,12 @@ const List2 = "Sobre"
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 ps-3 titulo-dsp-2 text-center">
+      <a class="col-lg-4 ps-3 titulo-dsp-2 text-center" href="/">
         <ImagenFooter
           caminho={imagen.caminho}
           alter={imagen.alter}
         />
-      </div>
+      </a>
       <div class="col-lg-2 titulo-dsp-2"> 
         <LineaFooter linea = "Introdução à programação" />
         <LineaFooter linea = "Git e GitHub" />
@@ -76,12 +106,34 @@ const List2 = "Sobre"
         <LineaFooter linea = "Visualização de Dados" />
         <LineaFooter linea = "Introdução ao Machine Learning" />
       </div>
-      <div class="col-12 col-lg-2">
-        <LineaFooter linea = "Escola" />
-        <LineaFooter linea = "Cursos" />
-        <LineaFooter linea = "Eventos" />
-        <LineaFooter linea = "Blog" />
+      <div class="col-12 col-lg-2 display-line">
+        <LineaFooter linea = "Escola"  caminho = "/about"/>
+        <LineaFooter linea = "Cursos" caminho = "/cursos"/>
+        <LineaFooter linea = "Eventos" caminho = "/cursos" />
+        <LineaFooter linea = "Blog" caminho = "/blog"/>
       </div>
+    </div>
+    <div class="row pb-2">
+        <div class="col-12 col-lg-6 ps-5 titulo-dsp-2">
+          <div class="linea-footer">© 2023 Araguaney Escola Digiltal LTDA </div>
+          <div class="row">
+            <a class="col-2 linea-footer">Termos de uso</a>
+            <a class="col-10 linea-footer">Políticas de Privacidade</a>
+          </div>
+          <div class="linea-footer">Todos os direitos reservados</div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex ">
+          <div class="col-3 col-lg-3"></div>
+          <div class="col-lg-1"><Icons caminho={icon.caminho}
+            alter={icon.alter} rrss={icon.rrss}/></div>
+          <div class="col-lg-1"><Icons caminho={icon1.caminho}
+            alter={icon1.alter} rrss={icon1.rrss}/></div>
+          <div class="col-lg-1"><Icons caminho={icon2.caminho}
+            alter={icon2.alter} rrss={icon2.rrss}/></div>
+          <div class="col-lg-1"><Icons caminho={icon3.caminho}
+            alter={icon3.alter} rrss={icon3.rrss}/></div>
+          <div class="col-3 col-lg-1"></div>
+        </div>
     </div>
   </footer>
 </div>

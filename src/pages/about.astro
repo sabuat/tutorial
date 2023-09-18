@@ -1,8 +1,170 @@
 ---
 import Page from "../components/Page.astro";
+import ImagenCorpo2 from "../components/ImagenCorpo2.astro";
+import Boton from "../components/Boton.astro";
+import TituloCorpo from "../components/TituloCorpo.astro";
+import TituloParrafo from "../components/TituloParrafo.astro";
+import ParagrafoCorpo from "../components/ParagrafoCorpo.astro";
+import ParagrafoCorpoBranco from "../components/ParagrafoCorpoBranco.astro";
+import "../styles/imagens.css";
+
+const imagen = {
+  caminho: "/site/learning online 2.jpg",
+  alter: "Pessoa estudando online em casa",
+};
+
+const imagen2 = {
+  caminho: "/site/learning online.jpg",
+  alter: "Pessoa estudando online",
+};
+
+const imagen3 = {
+  caminho: "/site/learning online 6.jpg",
+  alter: "Pessoa estudando online",
+};
+
 const Titulo = "Sobre";
 ---
 
-<Page pageTitle ={Titulo}>
- 
+<Page pageTitle={Titulo}>
+  <div class="row box align-items-center">
+    <div class="col-12 col-lg-7 mb-3">
+      <div class="col-12">
+        <TituloCorpo>Capacitando Devs</TituloCorpo>
+        <TituloCorpo>
+          <span style="color: var(--azul-medio)">Front e Back End</span>
+        </TituloCorpo>
+        <ParagrafoCorpo>
+          Araguaney Escola Digital é uma iniciativa de caráter educativo e
+          social que busca proporcionar conhecimento e habilidades em
+          desenvolvimento Front End e Back End para indivíduos que enfrentam
+          dificuldades de acesso à educação e informações na área de tecnologia.
+        </ParagrafoCorpo>
+      </div>
+    </div>
+    <ImagenCorpo2
+      style="align-items-center"
+      caminho={imagen.caminho}
+      alter={imagen.alter}
+    />
+  </div>
+  <div class="row box p-4" style="background-color: var(--azul-medio)">
+    <div class="col-lg-2"></div>
+    <div class="col-12 col-lg-8">
+      <div
+        class="fonte-titulo fs-1 text-center pb-1"
+        style="color: var(--branco-geral)"
+      >
+        Nossa Missão e Objetivos
+      </div>
+      <ParagrafoCorpoBranco>
+        Na essência da Araguaney Escola Digital, está nossa missão de fornecer
+        educação acessível e de alta qualidade.
+      </ParagrafoCorpoBranco><br />
+      <ParagrafoCorpoBranco>
+        <b>Nossos objetivos são claros:</b>
+      </ParagrafoCorpoBranco>
+      <ul>
+        <li>
+          <ParagrafoCorpoBranco>
+            &#8226 <b><em>Acesso Inclusivo:</em></b> Abraçamos a diversidade e proporcionamos
+            oportunidades de aprendizado a todos, independentemente das barreiras
+            geográficas, econômicas ou sociais que possam enfrentar ao buscar educação
+            tecnológica.
+          </ParagrafoCorpoBranco>
+        </li>
+        <li>
+          <ParagrafoCorpoBranco>
+            &#8226 <b><em>Qualificação Profissional:</em></b> Capacitamos nossos alunos
+            com conhecimentos práticos em programação Front End e Back End, capacitando-os
+            a perseguir carreiras de sucesso ou a empreender no mundo digital.
+          </ParagrafoCorpoBranco>
+        </li>
+        <li>
+          <ParagrafoCorpoBranco>
+            &#8226 <b><em>Comunidade Colaborativa:</em></b> Acreditamos no poder da colaboração.
+            Incentivamos uma comunidade ativa de aprendizes, onde o compartilhamento
+            de conhecimento e a cooperação são a norma.
+          </ParagrafoCorpoBranco>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+  <div class="row box align-items-center">
+    <ImagenCorpo2
+      style="align-items-center"
+      caminho={imagen2.caminho}
+      alter={imagen2.alter}
+    />
+    <div class="col-12 col-lg-7">
+      <div class="col-12 ps-3">
+        <TituloParrafo Titulo="Tecnologia a seu favor" />
+        <ParagrafoCorpo>
+          Na Araguaney Escola Digital, a tecnologia é uma aliada. Nossa
+          plataforma online oferece aulas em vídeo, hospedadas no YouTube, e
+          recursos complementares no GitHub. Além disso, nosso chatbot, o
+          ChatGPT, está pronto para auxiliá-lo com informações, orientação
+          personalizada e respostas às suas perguntas.
+        </ParagrafoCorpo>
+        <TituloParrafo Titulo="Transformando vidas e comunidades" />
+        <ParagrafoCorpo>
+          Não estamos apenas ensinando habilidades técnicas; estamos promovendo
+          mudanças sociais positivas. Ao tornar o acesso à educação em
+          tecnologia mais inclusivo, estamos contribuindo para o crescimento
+          econômico e social das comunidades que atendemos.
+        </ParagrafoCorpo>
+      </div>
+    </div>
+  </div> 
+  <div class="row box" style="background-color: var(--cinza-claro)">
+    <div class="col-lg-2"></div>
+    <div class="col-12 col-lg-8">
+      <div
+        class="fonte-titulo fs-1 text-center pb-1"
+      >
+        O Que Oferecemos
+      </div>
+        <ParagrafoCorpo>
+          Nosso programa de aprendizado é estruturado e abrange as áreas essenciais do desenvolvimento web:
+        </ParagrafoCorpo>
+        <ul>
+          <li>
+            <ParagrafoCorpo>
+              &#8226 <b><em>Introdução à Programação:</em></b> Comece sua jornada de programação a partir das bases sólidas. Esteja preparado para avançar em direção a qualquer trilha que escolher.
+            </ParagrafoCorpo>
+          </li>
+          <li>
+            <ParagrafoCorpo>
+              &#8226 <b><em>Trilha Front-End: </em></b> Mergulhe fundo no mundo do desenvolvimento Front-End. Aprenda a criar interfaces atraentes e interativas, dominando HTML, CSS, JavaScript e muito mai
+            </ParagrafoCorpo>
+          </li>
+          <li>
+            <ParagrafoCorpo>
+              &#8226<b><em>Trilha Back-End:</em></b> Descubra o funcionamento dos bastidores da web. Domine as linguagens e ferramentas essenciais para a construção sólida do Back-End.
+            </ParagrafoCorpo>
+          </li>
+          <li>
+            <ParagrafoCorpo>
+              &#8226 <b><em>Análise de Dados:</em></b> Entre no universo da análise de dados e descubra como transformar informações em insights valiosos.
+            </ParagrafoCorpo>
+          </li>
+        </ul>
+        <div class="img-add mb-3">
+           <ImagenCorpo2
+            style="align-items-center"
+            caminho={imagen3.caminho}
+            alter={imagen3.alter}
+          />
+        </div>
+        <ParagrafoCorpo>
+          <b>Nossa abordagem prática e hands-on garante que você adquira habilidades valiosas e construa um portfólio impressionante em sua área de interesse.</b>
+        </ParagrafoCorpo><br/>
+        <ParagrafoCorpo>Escolha a trilha que mais se alinha com seus objetivos e comece a sua jornada de aprendizado conosco hoje mesmo!</ParagrafoCorpo>
+        <div class="col-12 text-center">
+          <Boton nombre="INSCRIVA-SE" />
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+  </div>
 </Page>

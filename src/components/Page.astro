@@ -1,7 +1,7 @@
 ---
 import Barra from './Barra.astro';
 import Footer from '../components/Footer.astro';
-import ImagemSlides from "../components/ImagemSlides.astro";
+import ImagemDisplay from "../components/ImagemDisplay.astro";
 import '../styles/index.css';
 import '../styles/imagens.css';
 const { pageTitle } = Astro.props;
@@ -32,9 +32,9 @@ const imagen = {
   </head>
   <body>
     <Barra/>
-    <div class="img-add" style="padding: 1em">
-      <ImagemSlides caminho={imagen.caminho} alter={imagen.alter} />
-    </div>
+    <a class="img-add text-center" style="padding: 1em" href="/">
+      <ImagemDisplay caminho={imagen.caminho} alter={imagen.alter} />
+    </a>
       <slot/>
     <Footer/>
   </body>
